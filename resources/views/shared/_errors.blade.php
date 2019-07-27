@@ -1,7 +1,9 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: linweiyuan
- * Date: 2019-07-27
- * Time: 16:38
- */
+@if (count($errors) > 0)
+    <div class="alert alert-danger">
+        <ul>
+            @foreach($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
