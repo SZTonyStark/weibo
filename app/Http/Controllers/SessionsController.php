@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 
+//这个controller只做了会话控制以及重定向而已
 class SessionsController extends Controller
 {
     public function create(){
